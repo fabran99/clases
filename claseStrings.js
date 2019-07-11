@@ -225,11 +225,11 @@ var aleatorio = `Han pasado ${Math.random()} Años luz desde el domingo pasado`;
 // donde estaba el trozo que pusimos en el primer parametro
 
 // ejemplo
-var str10 = "Con Jesus todo era paz y armonía";
+var str10 = "Jose fue a comprar pan";
 
-var strCambiada = str10.replace("Jesus", "Hitler");
+var strCambiada = str10.replace("Jose", "Pedro");
 
-// console.log(strCambiada) => Con Hitler todo era paz y armonía
+// console.log(strCambiada) => Pedro fue a comprar pan
 
 // por defecto, replace cambia solo la primera vez que encuentra la palabra
 // asique si quiero cambiar la frase en toda la string y no solo una vez
@@ -237,15 +237,15 @@ var strCambiada = str10.replace("Jesus", "Hitler");
 // y ponerle una g al final, que significa global
 // /textoareemplazar/g en lugar de "textoareemplazar"
 
-str10 = "Con Jesus todo era paz y armonía, hijos de puta mataron a Jesus";
+str10 = "Jose fue a comprar pan, Jose tenia dinero";
 
-strCambiada = str10.replace("Jesus", "Hitler");
-// console.log(strCambiada) => Con Hitler todo era paz y armonía, hijos de puta mataron a Jesus
+strCambiada = str10.replace("Jose", "Benito");
+// console.log(strCambiada) => Benito fue a comprar pan, Jose tenia dinero
 
 // solo cambia en la primera ocurrencia, en cambio usando global
 
-strCambiada = str10.replace(/Jesus/g, "Hitler");
-// console.log(strCambiada) => Con Hitler todo era paz y armonía, hijos de puta mataron a Hitler
+strCambiada = str10.replace(/Jose/g, "Benito");
+// console.log(strCambiada) => Benito fue a comprar pan, Benito tenia dinero
 // cambia en todas las veces que encuentre la palabra o frase
 
 // podemos usar replace para borrar trozos de la string, sustituyendo
