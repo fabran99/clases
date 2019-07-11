@@ -43,7 +43,7 @@ var resto = 5 % 2;
 // console.log(resto) => 1
 
 // esto es especialmente util para revisar si un numero es multiplo de otro
-// o si es para o impar, si queremos saber si es par, simplemente usamos este
+// o si es par o impar, si queremos saber si es par, simplemente usamos este
 // operador para dividirlo entre 2, y revisar si da un resto distinto de 0
 
 var resto2 = 6 % 2;
