@@ -169,8 +169,8 @@ var resultado = (total * porcentaje) / 100;
 // RED, GREEN, BLUE, estos valores van desde 0 hasta 255 y NO PUEDEN
 // LLEVAR COMA, cuanto mas alto mas intenso es ese color en la mezcla final.
 
-// ejemplo 1 :  rgb(256, 0, 0)
-// 256 de rojo, 0 de verde y 0 de azul, da como resultado un rojo intenso
+// ejemplo 1 :  rgb(255, 0, 0)
+// 255 de rojo, 0 de verde y 0 de azul, da como resultado un rojo intenso
 
 // ejemplo 2 : rgb(0, 0, 0)
 // 0 de todos los colores da como resultado un negro.
