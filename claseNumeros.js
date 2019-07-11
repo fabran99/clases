@@ -132,7 +132,7 @@ var entre0y10 = Math.random() * 10;
 var entre5y10 = 5 + Math.random() * 5;
 
 // si se quiere establecer el minimo y el maximo lo que se hace es
-// que inicialmente ya este sumado ese maximo antes de mezclarlo con el numero
+// que inicialmente ya este sumado ese minimo antes de mezclarlo con el numero
 // aleatorio, de esta forma te aseguras de que al menos sea 5
 
 // en este caso lo que se hace es a ese 5 inicial, sumarle un numero
