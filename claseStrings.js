@@ -181,6 +181,7 @@ var str8may = "TEXTO";
 // que la string vaya rodeada con este tipo de
 // comillas especiales ``: Lo que se hace es escribir las variables
 // entre llaves como la de los objetos, antecedidos por un signo de dolar
+// `${variable}`
 
 var animal = "Conejo";
 
