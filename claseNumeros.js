@@ -187,6 +187,6 @@ var resultado = (total * porcentaje) / 100;
 // tienen que ser 3 numeros enteros al azar entre 0 y 255
 // ejemplo: rgb(numero1, numero2, numero3)
 
-// en esta pagina se puede poner el codigo rgb de un color y apretando entre
+// en esta pagina se puede poner el codigo rgb de un color y apretando enter
 // te muestra que color forma la mezcla
 // comprobarlo en https://www.w3schools.com/colors/colors_rgb.asp
