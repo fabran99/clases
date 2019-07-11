@@ -175,6 +175,9 @@ var resultado = (total * porcentaje) / 100;
 // ejemplo 2 : rgb(0, 0, 0)
 // 0 de todos los colores da como resultado un negro.
 
+// ejemplo 3: rgb(210, 57, 12)
+// da un color naranja
+
 // para escribir un color, que luego va a ser usado en una interfaz
 // se debe escribir rgb y entre parentesis los 3 valores de rojo, verde y azul
 // como en los ejemplos, en ese mismo orden.
