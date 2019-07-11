@@ -212,6 +212,50 @@ reordenada = `${str7cortada[1]}/${str7cortada[2]}/${str7cortada[0]}`;
 var aleatorio = `Han pasado ${Math.random()} Años luz desde el domingo pasado`;
 // console.log(aleatorio) => Han pasado 0.0001491299407106 Años luz desde el domingo pasado
 
+////////////////////////////
+// 10- reemplazar texto en una string
+////////////////////////////
+
+// si necesitamos sustituir una palabra o frase de una string por otra
+// o borrarla, usamos la funcion string.replace()
+
+// replace lleva 2 parametros, que van separados por coma
+// el primer parametro es el trozo que vamos a sustituir
+// el segundo parametro es el texto que vamos a agregar en los lugares
+// donde estaba el trozo que pusimos en el primer parametro
+
+// ejemplo
+var str10 = "Con Jesus todo era paz y armonía";
+
+var strCambiada = str10.replace("Jesus", "Hitler");
+
+// console.log(strCambiada) => Con Hitler todo era paz y armonía
+
+// por defecto, replace cambia solo la primera vez que encuentra la palabra
+// asique si quiero cambiar la frase en toda la string y no solo una vez
+// tenemos que usar barras en lugar de comillas para señalar la string
+// y ponerle una g al final, que significa global
+// /textoareemplazar/g en lugar de "textoareemplazar"
+
+str10 = "Con Jesus todo era paz y armonía, hijos de puta mataron a Jesus";
+
+strCambiada = str10.replace("Jesus", "Hitler");
+// console.log(strCambiada) => Con Hitler todo era paz y armonía, hijos de puta mataron a Jesus
+
+// solo cambia en la primera ocurrencia, en cambio usando global
+
+strCambiada = str10.replace(/Jesus/g, "Hitler");
+// console.log(strCambiada) => Con Hitler todo era paz y armonía, hijos de puta mataron a Hitler
+// cambia en todas las veces que encuentre la palabra o frase
+
+// podemos usar replace para borrar trozos de la string, sustituyendo
+// el trozo por un espacio vacio, es decir ponemos "", y significa
+// que estamos dejando un espacio vacio
+
+str10 = "Habia una vez un circo";
+strCambiada = str10.replace("un circo", "");
+// console.log(strCambiada) => Habia una vez
+
 /////////////////////////////////////
 // ejercicio de formateo de texto
 ////////////////////////////////////
