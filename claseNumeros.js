@@ -11,7 +11,7 @@
 
 // las operaciones comunes se pueden hacer sin problemas igual que en
 // una calculadora, la diferencia es que se pueden usar variables
-// para representarlos, tambien tener en cuenta que al multiplicar no se usa
+// para representar los numeros, tambien tener en cuenta que al multiplicar no se usa
 // la x sino *
 
 var numero1 = 5;
