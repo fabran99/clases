@@ -259,8 +259,7 @@ strCambiada = str10.replace("un circo", "");
 /////////////////////////////////////
 // ejercicio de formateo de texto
 ////////////////////////////////////
-// en japones los nombres se suelen decir
-// Primero el apellido y luego el nombre
+// en japones se suele decir primero el apellido y luego el nombre
 
 var nombre = "Uzumaki Naruto";
 

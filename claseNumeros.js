@@ -181,7 +181,7 @@ var resultado = (total * porcentaje) / 100;
 
 // usando Math.random() y la mezcla de strings de la parte 9 de claseStrings.js
 // mostrar en la consola una string que forme un color al azar
-// tienen que ser 3 numeros al azar entre 0 y 255
+// tienen que ser 3 numeros enteros al azar entre 0 y 255
 // ejemplo: rgb(numero1, numero2, numero3)
 
 // en esta pagina se puede poner el codigo rgb de un color y apretando entre
