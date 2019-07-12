@@ -54,7 +54,7 @@ array3.push(5);
 array3[5] = 6;
 // console.log(array3) => [ 1, 2, 3, 4, 5, 6 ]
 
-// lo mejor suele ser usar la pufuncion push(), porque de esta forma te aseguras
+// lo mejor suele ser usar la funcion push(), porque de esta forma te aseguras
 // no dejar un espacio hueco, si usamos el segundo metodo y nos salteamos un lugar,
 // dejaremos un espacio vacio en el array, que luego puede dar problemas.
 
@@ -66,7 +66,7 @@ array3[7] = 12;
 ////////////////////
 
 // en caso de querer mezclar 2 arrays, usamos la funcion concat().
-// se escribe array1.concat(array2, array3, array4....)
+// se escribe array1.concat(array2)
 
 var arrayInicial = [1, 2, 3, 4];
 var arraySecundario = [5, 6, 7, 8];
@@ -169,3 +169,53 @@ var personas = [
 
 // console.log(personas[0].ocupacion) => Eloboosteado
 // primero entro a personas, luego a la posicion 0 del array que es el objeto bunny, y entonces busco su ocupación
+
+///////////////////////////
+// 10 - eliminar elementos de un array
+//////////////////////////
+// hay varias formas de borrar una variable dentro de un array
+
+// javascript permite borrar el ultimo, el primero, o tambien concretamente uno o mas
+// usando su posición en el array
+
+var conjunto = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// para borrar el ultimo usamos la funcion .pop(), que no lleva parametros
+
+conjunto.pop();
+// console.log(conjunto) => [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+// se borra el 9, importante notar que pop NO RETORNA el array nuevo sin el
+// ultimo elemento, sino que modifica el array que ya existia
+
+// para borrar el primer elemento usamos .shift()
+
+conjunto.shift();
+
+// console.log(conjunto) => [ 2, 3, 4, 5, 6, 7, 8 ]
+// se borra el 1, al igual que pop, esta funcion modifica el array original
+// en lugar de retornar uno nuevo.
+
+// para borrar un elemento segun su posición usamos la función splice()
+// splice tiene muchas utilidades, la mas basica es borrar elementos a partir
+// del lugar que tomemos como parametro
+
+var conjuntoNombres = ["Carrica", "Bardini", "Bunny", "Odazio", "Panes"];
+
+// supongamos que queremos echar a odazio del grupo porque no juega al lol
+// para revisar en que puesto del array está, usamos indexOf como en uno de los
+// pasos anteriores
+
+var lugar = conjuntoNombres.indexOf("Odazio");
+// console.log(lugar) => 3
+
+// para eliminarlo, vamos a usar la funcion splice(), splice lleva 2 parametros,
+// el indice a partir de donde vas a eliminar, y el segundo parametro
+// es la cantidad de elementos que vas a borrar a partir de ahi, en este caso
+// solo vamos a borrar a Odazio, por lo que sera solo 1 elemento
+
+conjuntoNombres.splice(lugar, 1);
+
+// console.log(conjuntoNombres) => [ 'Carrica', 'Bardini', 'Bunny', 'Panes' ]
+
+// al igual que pop y shift, splice() no retorna el array nuevo, sino que modifica
+// el original
