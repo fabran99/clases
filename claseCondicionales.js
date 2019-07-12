@@ -203,3 +203,6 @@ var jugadasPosibles = ["Piedra", "Papel", "Tijera"];
 // a ver quien gano, y mostrar en la consola un mensaje como:
 
 // "Elegiste: 'Piedra', salio: 'Tijera' => Tu ganas "
+
+// de forma que si llamo:
+// ppt("Tijera") => "Elegiste: 'Tijera', salio: 'Tijera' => Empate "
