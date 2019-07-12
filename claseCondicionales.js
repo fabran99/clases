@@ -104,7 +104,7 @@ if (pensionista || trabajador) {
 // asique con que una sea true, es suficiente
 
 // se usa != cuando queremos ver si 2 cosas son diferentes una de otra
-// ej: mi nombre != tu nombre => nos llamamos diferente
+// ej: mi nombre es distinto de tu nombre => nos llamamos diferente
 
 var miNombre = "Carlos";
 var tuNombre = "Jose";
