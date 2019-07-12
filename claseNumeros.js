@@ -211,3 +211,12 @@ function rgbAzar() {
 }
 
 // console.log(rgbAzar()) => rgb(71, 50, 102) por ejemplo
+
+// en el caso de redondear, se pueden encadenar todas las operaciones en una sola linea
+// pero puede ser confuso al principio, por ejemplo:
+
+// es decir, redondeo el resultado de => un numero al azar multiplicado 255 + 0
+// primero calcula el numero al azar, luego lo multiplica y lo suma, y recien cuando
+// esta listo, lo redondea
+
+// var n1 = Math.round(Math.random() * 255 + 0)
