@@ -238,9 +238,9 @@ var colores = [];
 // creo el array vacio para agregarle los colores
 var colores = [];
 
-// funcion para elegir un numero al azar entre un valor u otro
+// funcion para elegir un numero al azar entre un valor y otro
 function numAzar(minimo, maximo) {
-  var resultado = Math.random() * maximo + minimo;
+  var resultado = minimo + Math.random() * (maximo - minimo);
   var redondeado = Math.round(resultado);
   return redondeado;
 }

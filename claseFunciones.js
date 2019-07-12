@@ -161,12 +161,15 @@ function sumar(primero, segundo) {
 // de forma que si llamamos azar(0, 5) => deberia retornar un numero entre 0 y 5 incluido
 
 function azar(minimo, maximo) {
-  // como se explicó en la claseNumeros, para hacer un numero al azar entre 2 numeros, hay que multiplicar
-  // Math.random() por el tope máximo, y sumarle el mínimo
-  var resultado = minimo + Math.random() * maximo;
+  // como se explicó en la claseNumeros, para hacer un numero al azar entre 2 numeros,
+  // hay que tomar el minimo, y sumarle Math.random() multiplicado por la diferencia
+  // entre el maximo y el minimo
 
-  // el numero que tenemos hasta ahora, efectivamente esta entre 0 y 5, pero hay que redondearlo para que
-  // de un entero como queremos, para esto retornamos el resultado con Math.round(resultado)
+  var resultado = minimo + Math.random() * (maximo - minimo);
+
+  // el numero que tenemos hasta ahora, efectivamente esta entre el minimo y maximo,
+  // pero hay que redondearlo para que de un entero como queremos,
+  // para esto retornamos el resultado con Math.round(resultado)
 
   return Math.round(resultado);
 }
@@ -221,7 +224,7 @@ function tirarMoneda() {
 
 function tirarDados(jugada) {
   // saco el numero al azar y lo redondeo  para que sea entre 1 y 6
-  var azar = Math.random() * 5 + 1;
+  var azar = 1 + Math.random() * (6 - 1);
   var azarRedondeado = Math.round(azar);
 
   // reviso si el numero esta entre 1 y 6

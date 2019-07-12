@@ -197,9 +197,9 @@ var resultado = (total * porcentaje) / 100;
 
 function rgbAzar() {
   // 3 numeros al azar entre 0 y 255
-  var n1 = Math.random() * 255 + 0;
-  var n2 = Math.random() * 255 + 0;
-  var n3 = Math.random() * 255 + 0;
+  var n1 = Math.random() * 255;
+  var n2 = Math.random() * 255;
+  var n3 = Math.random() * 255;
 
   // redondeo estos numeros, porque actualmente pueden tener decimales
   n1 = Math.round(n1);
