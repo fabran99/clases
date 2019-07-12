@@ -161,9 +161,9 @@ var jugadaDelOtro = "Tijera";
 
 // en este caso voy a evaluar primero que mi jugada se piedra, y dentro de esa condicion
 // voy a revisar que jugo el otro.
-// Las demas condiciones van dentro de la condicion
-// de que yo haya jugado piedra, por el hecho de que el resultado depende de lo que
-// yo haya elegido.
+// Las demas condiciones van dentro de la condicion de que yo haya jugado piedra,
+// por el hecho de que el resultado depende de lo que yo haya elegido.
+
 // No es lo mismo que yo elija piedra y el otro tijera, a que yo elija papel y el otro tijera
 
 // si jugue piedra
