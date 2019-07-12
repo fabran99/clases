@@ -274,6 +274,7 @@ var nombre = "Uzumaki Naruto";
 
 // lo separo dejando un espacio, que es lo que separa las 2 palabras
 var separado = nombre.split(" ");
+// console.log(separado) => [ 'Uzumaki', 'Naruto' ]
 
 var ordenado = `${separado[1]} ${separado[0]}`;
 // console.log(ordenado) => Naruto Uzumaki
