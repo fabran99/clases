@@ -71,6 +71,9 @@ numero2 = 15;
 // 3 - funciones que retornan valores
 ////////////////////
 
+numero1 = 2;
+numero2 = 15;
+
 function sumar() {
   return numero1 + numero2;
 }
