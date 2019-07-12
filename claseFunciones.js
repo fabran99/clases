@@ -125,10 +125,11 @@ function revisar() {
 ///////////////////////////
 
 // sin embargo, la mayor utilidad de las funciónes es reciclar código, para poder utilizarlo varias veces
-// a lo largo del programa ahorrando repetir tareas que se hagan varias veces,
+// a lo largo del programa, ahorrando repetir tareas que se hagan seguido,
 // la mejor forma de hacerlo, es usando parametros, de esta forma no dependemos
 // de una variable concreta para hacerla funcionar, sino que usando la misma función siempre, variando su resultado
-// segun el parámetro que le pongamos entre parentesis, de la misma forma que console.log() se puede usar decenas de veces
+// segun el parámetro que le pongamos entre parentesis.
+// De la misma forma que console.log() se puede usar decenas de veces
 // en cada programa, cambiando el contenido que va entre los paréntesis obtenes distintos resultados
 
 // console.log("resultado 1") => resultado 1
@@ -147,19 +148,21 @@ function sumar(primero, segundo) {
 // para llamar la funcion ahora, no basta con poner suma(), sino que entre paréntesis hay que poner los 2 valores que
 // se van a sumar, separados por coma
 
-// sumar(5, 10 ) => equivale a 15, ahora como equivale a un numero, puedo usarlo para hacer mas operaciones
+// sumar( 5, 10 ) => equivale a 15, ahora como equivale a un numero, puedo usarlo para hacer mas operaciones
 
 // si quiero calcular el cuadrado de la suma de 2 numeros, los sumo y los multiplico
 // console.log(sumar(5, 10) * sumar(5, 10)) => 225
 
 // Por supuesto, los parametros pueden ser cualquier tipo de variable, eso va a depender del tipo de función que estemos
-// haciendo, en este caso vamos a hacer una función que retorne un numero entero al azar, que se encuentre entre 2 numeros,
+// haciendo.
+
+// En el siguiente caso vamos a hacer una función que retorne un numero entero al azar, que se encuentre entre 2 numeros,
 // el primer parámetro sera el numero minimo, y el segundo parametro será el maximo
 // de forma que si llamamos azar(0, 5) => deberia retornar un numero entre 0 y 5 incluido
 
 function azar(minimo, maximo) {
   // como se explicó en la claseNumeros, para hacer un numero al azar entre 2 numeros, hay que multiplicar
-  // Math.random() por el tome máximo, y sumarle el mínimo
+  // Math.random() por el tope máximo, y sumarle el mínimo
   var resultado = minimo + Math.random() * maximo;
 
   // el numero que tenemos hasta ahora, efectivamente esta entre 0 y 5, pero hay que redondearlo para que
@@ -174,6 +177,8 @@ function azar(minimo, maximo) {
 // de lo que salga, decimos que es cara o cruz
 
 function tirarMoneda() {
+  //  si nos sale 1 decimos que es cara
+  // sino sale cruz
   if (azar(0, 1) == 0) {
     console.log("Cara");
   } else {
