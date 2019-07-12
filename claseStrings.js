@@ -265,3 +265,15 @@ var nombre = "Uzumaki Naruto";
 
 // usando la funcion split() y la mezcla avanzada del punto 9, reordenar el
 // nombre para que diga Naruto Uzumaki.
+
+//////////////////
+// solucion
+////////////////
+
+var nombre = "Uzumaki Naruto";
+
+// lo separo dejando un espacio, que es lo que separa las 2 palabras
+var separado = nombre.split(" ");
+
+var ordenado = `${separado[1]} ${separado[0]}`;
+// console.log(ordenado) => Naruto Uzumaki

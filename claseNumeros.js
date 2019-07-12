@@ -190,3 +190,24 @@ var resultado = (total * porcentaje) / 100;
 // en esta pagina se puede poner el codigo rgb de un color y apretando enter
 // te muestra que color forma la mezcla
 // comprobarlo en https://www.w3schools.com/colors/colors_rgb.asp
+
+/////////////////////////
+// solucion
+////////////////////////
+
+function rgbAzar() {
+  // 3 numeros al azar entre 0 y 255
+  var n1 = Math.random() * 255 + 0;
+  var n2 = Math.random() * 255 + 0;
+  var n3 = Math.random() * 255 + 0;
+
+  // redondeo estos numeros, porque actualmente pueden tener decimales
+  n1 = Math.round(n1);
+  n2 = Math.round(n2);
+  n3 = Math.round(n3);
+
+  var resultado = `rgb(${n1}, ${n2}, ${n3})`;
+  return resultado;
+}
+
+// console.log(rgbAzar()) => rgb(71, 50, 102) por ejemplo

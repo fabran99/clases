@@ -206,3 +206,7 @@ var jugadasPosibles = ["Piedra", "Papel", "Tijera"];
 
 // de forma que si llamo:
 // ppt("Tijera") => "Elegiste: 'Tijera', salio: 'Tijera' => Empate "
+
+///////////////////////////////
+// solucion => tenes uno hecho en tus notas
+////////////////////////////////

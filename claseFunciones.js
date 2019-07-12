@@ -214,3 +214,30 @@ function tirarMoneda() {
 // en caso de que la persona ponga un número que sea menor a 1, o mayor a 6 hay que poner una alerta
 // y en vez de retornar "acertaste" o "fallaste" debería retornar "Numero incorrecto", ya que los dados tienen solo
 // 6 caras
+
+/////////////////////////
+// solucion
+////////////////////////
+
+function tirarDados(jugada) {
+  // saco el numero al azar y lo redondeo  para que sea entre 1 y 6
+  var azar = Math.random() * 5 + 1;
+  var azarRedondeado = Math.round(azar);
+
+  // reviso si el numero esta entre 1 y 6
+  if (jugada > 6 || jugada < 1) {
+    console.log("Numero incorrecto");
+  }
+  // si no hubo error entonces comparo el numero, si acierta ganas
+  else if (jugada == azarRedondeado) {
+    console.log(`Acertaste`);
+  }
+  //  si no acierta pierdes
+  else {
+    console.log(`Fallaste`);
+  }
+}
+
+// tirarDados(4) => acertaste o fallaste
+
+// estadisticamente solo deberias acertar una de cada 6 jugadas
