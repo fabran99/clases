@@ -186,6 +186,35 @@ if (miJugada == "Piedra") {
 // todos los casos, hay que hacer 2 condiciones mas en caso de que yo jugara tijera o papel,
 // con los distintos resultados posibles de acuerdo a lo que juegue el otro
 
+///////////////////////////
+// 4- condiciones de una sola linea
+////////////////////////////
+
+// estas son condiciones avanzadas, de if y else, en la que simplemente retornar un valor u otro dependiendo de si la condicion se cumple
+
+var persona = {
+  genero: "Masculino",
+  profesion: "Medicina"
+};
+
+// segun si es maquilino o femenino queremos ponerle una propiedad titulo, que sea Dra. o Dr.
+
+persona.titulo = persona.genero == "Masculino" ? "Dr." : "Dra.";
+
+// console.log(persona.titulo) => Dr.
+// esto funciona asi, primero ponemos una condicion => persona.genero=="Masculino"
+// con el signo de pregunta, basicamente preguntamos si la condicion es cierta, es como un if, entonces persona.titulo equivale a "Dr."
+// los 2 puntos : vendrian a significar el else, si persona.genero NO ES MASCULINO entonces persona.tiulo va a ser "Dra."
+
+// de esta forma podemos hacer que una variable tenga un valor u otro dependiendo de una condicion, normalmente tendriamos que hacer lo siguiente
+
+if (persona.genero == "Masculino") {
+  persona.titulo = "Dr.";
+} else {
+  persona.titulo = "Dra.";
+}
+// ahorramos 5 lineas de codigo
+
 /////////////////////////////////
 // ejercicio: Funcion que juegue al piedra papel o tijeras
 ////////////////////////////////

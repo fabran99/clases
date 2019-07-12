@@ -240,3 +240,14 @@ var nombres = "Carrica,Odazio,Panes,Bunny,Brian".split(",");
 
 // Ahorramos toda la sintaxis, esto no es necesariamente una buena practica, pero ahorra
 // tiempo cuando tenes que escribir valores a mano para meterlos en un array
+
+//////////////////////////
+// 12 - conocer largo de un array
+///////////////////////////
+// saber cuantos elementos hay en un array puede ser sumamente util
+// para eso usamos la propiedad .length, es decir, array.length equivale al numero de
+// elementos que hay en el array, por ejemplo:
+
+var conjuntoNombres = ["Carrica", "Odazio", "Panes", "Bunny", "Brian"];
+
+// console.log(conjuntoNombres.length) => 5

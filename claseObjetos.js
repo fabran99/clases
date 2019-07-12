@@ -104,6 +104,43 @@ for (propiedad in pokemon) {
 // electrico
 // [ 'rata blanca', 'ratatouille' ]
 
+////////////////////////////////////////
+// 4 - modificar objetos
+////////////////////////////////////////
+// al igual que los arrays, se pueden agregar propiedades nuevas a los objetos, tantas como queramos, y podemos sobreescribirlas y eliminarlas
+
+var pokemon = {
+  nombre: "pikachu",
+  tipo: "electrico",
+  parientes: ["rata blanca", "ratatouille"]
+};
+
+// si le quiero cambiar el nombre al pokemon uso:
+pokemon.nombre = "Snorlax";
+
+// console.log(pokemon) =>
+//{ nombre: 'Snorlax',
+// tipo: 'electrico',
+// parientes: [ 'rata blanca', 'ratatouille' ] }
+
+// simplemente se sobreescribe
+
+// si quiero agregar otra propiedad, agrego una que aun no este definida
+
+pokemon.edad = 12;
+// console.log(pokemon) =>
+//{ nombre: 'Snorlax',
+// tipo: 'electrico',
+// parientes: [ 'rata blanca', 'ratatouille' ],
+// edad: 12 }
+
+// para eliminar una propiedad usamos delete seguido de la propiedad a eliminar, en este caso la edad
+delete pokemon.edad;
+// console.log(pokemon) =>
+//{ nombre: 'Snorlax',
+// tipo: 'electrico',
+// parientes: [ 'rata blanca', 'ratatouille' ]}
+
 ////////////////////////////////
 // ejercicio: filtrar personajes del lol
 ////////////////////////////////
