@@ -266,3 +266,7 @@ for (let i = 1; i <= 5; i++) {
 // 'rgb(90, 172, 75)',
 // 'rgb(253, 100, 200)',
 // 'rgb(245, 175, 204)' ]
+
+// de esta manera podemos ahorrarnos mucho codigo, haciendo funciones y bucles
+// para repetir tareas que necesitemos ejecutar muchas veces, ahora mismo podrias
+// generar 1000 colores solo cambiando el 5 del bucle por 1000
