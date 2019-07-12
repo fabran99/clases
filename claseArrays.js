@@ -97,6 +97,10 @@ var ranking = ["Carrica", "Bardini", "Bunny", "Odazio", "Panes"];
 // );
 // Panes esta en el puesto 5 del ranking
 
+// en caso de que busquemos algo que no exista dentro del array
+// ej: ranking.indexOf("bananas") => -1
+// retornara -1, esto indica simplemente que no existe un elemento con ese valor
+
 ///////////////////////////
 // 6 - Ordenar elementos de un array
 //////////////////////////
