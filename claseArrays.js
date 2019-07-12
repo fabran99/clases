@@ -223,3 +223,20 @@ conjuntoNombres.splice(lugar, 1);
 
 // al igual que pop y shift, splice() no retorna el array nuevo, sino que modifica
 // el original
+
+///////////////////////
+// 11- crear arrays de strings facilmente
+///////////////////////
+// una manera de crear arrays rapidamente, si los valores son texto
+// es usando la funcion split, de esta forma en lugar de tener que
+// escribir lo siguiente respetando comas, comillas y sintaxis
+
+var conjuntoNombres = ["Carrica", "Odazio", "Panes", "Bunny", "Brian"];
+
+// podemos usar split para conseguir el mismo resultado
+
+var nombres = "Carrica,Odazio,Panes,Bunny,Brian".split(",");
+// console.log(nombres) => [ 'Carrica', 'Odazio', 'Panes', 'Bunny', 'Brian' ]
+
+// Ahorramos toda la sintaxis, esto no es necesariamente una buena practica, pero ahorra
+// tiempo cuando tenes que escribir valores a mano para meterlos en un array
