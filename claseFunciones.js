@@ -3,7 +3,7 @@
 /////////////////////////////////
 
 // las funciones son una operación que ejecuta javascript para realizar una tarea, las hay por defecto, y tambien
-// se pueden crear funciones propias para automatizar proceso que normalmente hacerlos a mano tardaria mucho
+// se pueden crear funciones propias para automatizar procesos que normalmente hacerlos a mano tardaria mucho
 
 //////////////////
 // 1- Funciones del sistema
