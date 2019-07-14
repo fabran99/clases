@@ -174,8 +174,7 @@ var campeones = [
 // con diferentes valores
 
 // lo que vamos a hacer es crear un array vacio para los resultados, y luego
-// recorrer el array con un bucle for comun, de los de la claseBucles (no este, que es solo)
-// para objetos.
+// recorrer el array con un bucle for comun, de los de la claseBucles
 
 // la idea es agregar al array vacio, unicamente los campeones que sean AD
 
@@ -215,7 +214,7 @@ var campeones = [
 // array vacio para poner los resultados que cumplan los requisitos
 var resultados = [];
 
-for (let i = 0; campeones[i]; i++) {
+for (let i = 0; i < campeones.length; i++) {
   //   si el tipo de damage del campeon
   // que estoy viendo actualmente en el bucle, es ad, lo agrego al
   // array de resultados
