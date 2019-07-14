@@ -50,17 +50,13 @@ var nombres = ["Carrica", "Bardini", "Bunny", "Odazio", "Panes"];
 
 contador = 0;
 // en los arrays comenzamos con el contador en 0, porque se cuentan desde 0
-// como se explico en la clase de los arrays, si trato de entrar a un elemento
-// del array que no existe, me devuelve undefined, undefined funciona igual que false,
-// es decir, si la condicion que tomo para el bucle da undefined, el bucle se corta,
-// porque considera que es falsa
+// como se explico en la clase de los arrays, esto provoca que la cantidad de elementos
+// que tiene un array sea 1 menos que el último indice de el array, es decir
+// si tengo 5 elementos en un array, el índice del ultimo sea 4, asique podemos decir
+// que una forma de pasar por todos los elementos de un array con un bucle, es que
+// el bucle continúe hasta que el contador sea menor (por 1) al largo total del array
 
-// en cambio si en la condicion simplemente elijo un valor que SI EXISTE dentro del array,
-// aunque el valor no sea igual a true, decimos que el valor existe, por lo que la condicion
-// si se cumple en este caso
-
-// si hay un valor asignado en el lugar donde actualmente esta el contador
-while (nombres[contador]) {
+while (contador < nombres.length) {
   // muestro el valor que esta en el lugar por el que va pasando el contador
   console.log(nombres[contador]);
 
@@ -86,7 +82,7 @@ while (nombres[contador]) {
 // decimos:
 var nombres = ["Carrica", "Bardini", "Bunny", "Odazio", "Panes"];
 
-for (var contador = 0; nombres[contador]; contador = contador + 1) {
+for (var contador = 0; contador < nombres.length; contador = contador + 1) {
   console.log(nombres[contador]);
 }
 
@@ -114,7 +110,7 @@ for (var contador = 0; nombres[contador]; contador = contador + 1) {
 // otra forma de ahorrar codigo, es que si simplemente queremos sumarle 1 a un numero
 // podemos usar ++, es decir contador++ es lo mismo que poner contador = contador + 1
 
-for (let i = 0; nombres[i]; i++) {
+for (let i = 0; i < nombres.length; i++) {
   console.log(nombres[i]);
 }
 
@@ -145,7 +141,7 @@ var nombres = ["Carrica", "Bardini", "Bunny", "Odazio", "Panes"];
 // simplemente ponemos una condicion, en este caso que el valor actual sea Odazio,
 // y si eso es cierto usamos continue, su nombre no  se mostrara
 
-for (let i = 0; nombres[i]; i++) {
+for (let i = 0; i < nombres.length; i++) {
   // si el valor actual, osea nombres[i] es "Odazio"
   if (nombres[i] == "Odazio") {
     // continua con el bucle ignorandolo
@@ -167,7 +163,7 @@ for (let i = 0; nombres[i]; i++) {
 // con continue, solo que en este caso el bucle se corta y todo lo que vendria despues
 // no se ejecuta
 
-for (let i = 0; nombres[i]; i++) {
+for (let i = 0; i < nombres.length; i++) {
   // si el valor actual, osea nombres[i] es "Odazio"
   if (nombres[i] == "Odazio") {
     // corta el bucle
@@ -187,7 +183,7 @@ for (let i = 0; nombres[i]; i++) {
 // es decir primero mostramos el nombre, y luego cortamos el bucle si comprobamos
 // que llegamos a odazio
 
-for (let i = 0; nombres[i]; i++) {
+for (let i = 0; i < nombres.length; i++) {
   // muestro el nombre
   console.log(nombres[i]);
 
