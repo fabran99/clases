@@ -26,7 +26,7 @@ var contador = 1;
 // 2, y luego 3, y luego 4 y asi hasta el resultado que uno quiera.
 
 // en este caso voy a contar solo hasta 5
-// mientras  el contador sea menor a 6, es decir, hasta 1000
+// mientras  el contador sea menor a 6, es decir, hasta 5
 while (contador < 6) {
   // muestro el numero que vaya en el contador
   console.log(contador);
